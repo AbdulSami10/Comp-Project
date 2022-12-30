@@ -26,59 +26,62 @@ const LoginForm = () => {
         autoComplete="off"
       >
         <h1 className={styles.h1}>{heading}</h1>
-        <Stack direction={{ base: "column", sm: "row" }}>
-          <Form.Item
-            label="Name"
-            name="name"
-            rules={[
-              {
-                required: true,
-                message: "Please input your name!",
-              },
-            ]}
-          >
-            <Input />
-          </Form.Item>
-          <Form.Item
-            label="E-mail"
-            name="email"
-            rules={[
-              {
-                required: true,
-                message: "Please input your email!",
-              },
-            ]}
-          >
-            <Input type="email" />
-          </Form.Item>
-        </Stack>
-        <Stack direction={{ base: "column", sm: "row" }}>
-          <Form.Item
-            label="Password"
-            name="password"
-            rules={[
-              {
-                required: true,
-                message: "Please input your password!",
-              },
-            ]}
-          >
-            <Input.Password />
-          </Form.Item>
-          <Form.Item
-            label="Phone No"
-            name="phoneNo"
-            rules={[
-              {
-                required: true,
-                message: "Please input your Phone Number!",
-              },
-            ]}
-          >
-            <Input />
-          </Form.Item>
-        </Stack>
-        <Stack direction={{ base: "column", sm: "row" }}>
+        {/* <Stack direction={{ base: "column", sm: "row" }}> */}
+        <Form.Item
+          label="Name"
+          name="name"
+          rules={[
+            {
+              required: true,
+              message: "Please input your name!",
+            },
+          ]}
+        >
+          <Input />
+        </Form.Item>
+        <Form.Item
+          label="E-mail"
+          name="email"
+          rules={[
+            {
+              required: true,
+              message: "Please input your email!",
+            },
+          ]}
+        >
+          <Input type="email" />
+        </Form.Item>
+        {/* </Stack> */}
+        {/* <Stack direction={{ base: "column", sm: "row" }}> */}
+        <Form.Item
+          label="Password"
+          name="password"
+          rules={[
+            {
+              required: true,
+              message: "Please input your password!",
+            },
+          ]}
+        >
+          <Input.Password />
+        </Form.Item>
+        <Form.Item
+          label="Phone No"
+          name="phoneNo"
+          rules={[
+            {
+              required: true,
+              message: "Please input your Phone Number!",
+            },
+          ]}
+        >
+          <Input />
+        </Form.Item>
+        {/* </Stack> */}
+        <Stack
+          direction={{ base: "column", sm: "row" }}
+          justifyContent="space-around"
+        >
           <Form.Item
             label="Subject"
             name="subject"

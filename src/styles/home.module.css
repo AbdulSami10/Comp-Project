@@ -1,0 +1,19 @@
+.h1 {
+  text-align: center;
+  color: #7656d6;
+  text-shadow: 1px 1px 2px black;
+  font-size: 40px;
+  margin: 0;
+  line-height: 4rem;
+  font-weight: bolder;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.firstSection {
+  width: 500px;
+  display: block;
+}
