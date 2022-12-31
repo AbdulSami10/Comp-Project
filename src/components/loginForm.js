@@ -1,8 +1,14 @@
 import React from "react";
 import { Button, Form, Input, InputNumber, Select } from "antd";
 import styles from "../styles/login.module.css";
-import { Stack } from "@chakra-ui/react";
-import { heading } from "../content";
+import {
+  LockOutlined,
+  UserOutlined,
+  MobileOutlined,
+  MailOutlined,
+} from "@ant-design/icons";
+
+import { heading, mobilePrefix } from "../content";
 import { useNavigate } from "react-router-dom";
 const LoginForm = () => {
   const navigate = useNavigate();
@@ -16,6 +22,7 @@ const LoginForm = () => {
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);
   };
+
   return (
     <React.Fragment>
       <Form
@@ -26,7 +33,7 @@ const LoginForm = () => {
         autoComplete="off"
       >
         <h1 className={styles.h1}>{heading}</h1>
-        {/* <Stack direction={{ base: "column", sm: "row" }}> */}
+
         <Form.Item
           label="Name"
           name="name"
@@ -37,7 +44,7 @@ const LoginForm = () => {
             },
           ]}
         >
-          <Input />
+          <Input prefix={<UserOutlined />} />
         </Form.Item>
         <Form.Item
           label="E-mail"
@@ -49,10 +56,9 @@ const LoginForm = () => {
             },
           ]}
         >
-          <Input type="email" />
+          <Input type="email" prefix={<MailOutlined />} />
         </Form.Item>
-        {/* </Stack> */}
-        {/* <Stack direction={{ base: "column", sm: "row" }}> */}
+
         <Form.Item
           label="Password"
           name="password"
@@ -63,7 +69,7 @@ const LoginForm = () => {
             },
           ]}
         >
-          <Input.Password />
+          <Input.Password prefix={<LockOutlined />} />
         </Form.Item>
         <Form.Item
           label="Phone No"
@@ -75,13 +81,33 @@ const LoginForm = () => {
             },
           ]}
         >
-          <Input />
+          <Input addonBefore={mobilePrefix} prefix={<MobileOutlined />} />
         </Form.Item>
-        {/* </Stack> */}
-        <Stack
-          direction={{ base: "column", sm: "row" }}
-          justifyContent="space-around"
-        >
+        <div className={styles.lastSec}>
+          <Form.Item
+            label="Gender"
+            name="gender"
+            rules={[
+              {
+                required: true,
+                message: "Please input your Subject!",
+              },
+            ]}
+          >
+            <Select
+              defaultValue="Enter Your Your Gender"
+              options={[
+                {
+                  value: "male",
+                  label: "Male",
+                },
+                {
+                  value: "female",
+                  label: "Female",
+                },
+              ]}
+            />
+          </Form.Item>
           <Form.Item
             label="Subject"
             name="subject"
@@ -118,7 +144,7 @@ const LoginForm = () => {
           >
             <InputNumber min={15} defaultValue={15} />
           </Form.Item>
-        </Stack>
+        </div>
         <Form.Item>
           <Button type="primary" htmlType="submit" className={styles.button}>
             Submit

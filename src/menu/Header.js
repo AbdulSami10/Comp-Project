@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import App from "../App";
-import styles from "./menu.module.css";
-import NavBar from "./NavBar";
+
+import styles from "../styles/menu.module.css";
+import NavBar from "../components/NavBar";
 const Header = () => {
   const navigate = useNavigate();
   useEffect(() => {

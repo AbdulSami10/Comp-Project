@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import styles from "./menu.module.css";
+import styles from "../styles/menu.module.css";
 import {
   LoginOutlined,
   LogoutOutlined,
@@ -37,10 +37,12 @@ const NavBar = () => {
             </li>
           </NavLink>
 
-          {!localStorage.getItem("userInfo") ? (
+          {/* {!localStorage.getItem("userInfo") ? (
             <NavLink to={"/login"} className={styles.navbarLink}>
-              Login
-              <LoginOutlined className={styles.icon} />
+              <li>
+                Login
+                <LoginOutlined className={styles.icon} />
+              </li>
             </NavLink>
           ) : (
             <li
@@ -51,6 +53,16 @@ const NavBar = () => {
               Logout
               <LogoutOutlined className={styles.icon} />
             </li>
+          )} */}
+
+          {!localStorage.getItem("userInfo") ? (
+            <NavLink to={"/login"} className={styles.navbarLink}>
+              <button className={styles.button}>Login</button>
+            </NavLink>
+          ) : (
+            <button onClick={logout} className={styles.button}>
+              Logout
+            </button>
           )}
         </ul>
       </nav>
