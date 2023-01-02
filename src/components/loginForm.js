@@ -95,7 +95,7 @@ const LoginForm = () => {
             ]}
           >
             <Select
-              defaultValue="Enter Your Your Gender"
+              defaultValue="Gender"
               options={[
                 {
                   value: "male",

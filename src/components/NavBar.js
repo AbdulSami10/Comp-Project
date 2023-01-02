@@ -2,8 +2,6 @@ import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import styles from "../styles/menu.module.css";
 import {
-  LoginOutlined,
-  LogoutOutlined,
   HomeOutlined,
   InfoCircleOutlined,
   DatabaseOutlined,

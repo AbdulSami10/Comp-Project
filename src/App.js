@@ -9,7 +9,6 @@ import About from "./pages/About";
 import Rules from "./pages/Rules";
 function App() {
   return (
-    // <>
     <BrowserRouter>
       <Header />
 
@@ -21,8 +20,6 @@ function App() {
         <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
-    // </>
-    // <Home />
   );
 }
 

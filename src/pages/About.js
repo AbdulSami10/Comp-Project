@@ -7,7 +7,7 @@ const About = () => {
     if (!localStorage.getItem("userInfo")) {
       navigate("/login");
     }
-  }, []);
+  }, [navigate]);
   return <div>About</div>;
 };
 

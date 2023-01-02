@@ -7,7 +7,7 @@ const Login = () => {
     if (localStorage.getItem("userInfo")) {
       navigate("/");
     }
-  }, []);
+  }, [navigate]);
   return (
     <React.Fragment>
       <LoginForm />

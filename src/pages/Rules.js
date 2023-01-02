@@ -6,7 +6,7 @@ const Rules = () => {
     if (!localStorage.getItem("userInfo")) {
       navigate("/login");
     }
-  }, []);
+  }, [navigate]);
   return <div>Rules</div>;
 };
 

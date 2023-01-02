@@ -8,7 +8,7 @@ const Home = () => {
     if (!localStorage.getItem("userInfo")) {
       navigate("/login");
     }
-  }, []);
+  }, [navigate]);
   return (
     <React.Fragment>
       <div className={styles.main}>
