@@ -5,8 +5,11 @@ const Rules = () => {
   useEffect(() => {
     if (!localStorage.getItem("userInfo")) {
       navigate("/login");
+    } else if (!localStorage.getItem("home")) {
+      navigate("/");
     }
   }, [navigate]);
+  // localStorage.removeItem("home");
   return <div>Rules</div>;
 };
 

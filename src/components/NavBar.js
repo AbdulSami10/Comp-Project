@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import styles from "../styles/menu.module.css";
+import styles from "../styles/header.module.css";
 import {
   HomeOutlined,
   InfoCircleOutlined,
@@ -11,6 +11,8 @@ const NavBar = () => {
   const navigate = useNavigate();
   const logout = () => {
     localStorage.removeItem("userInfo");
+    localStorage.removeItem("home");
+
     navigate("/login");
   };
   return (

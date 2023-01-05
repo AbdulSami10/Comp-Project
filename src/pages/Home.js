@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { heading, homeText } from "../content";
 import styles from "../styles/home.module.css";
+import Button from "../UI/Button/Button";
 const Home = () => {
   const navigate = useNavigate();
   useEffect(() => {
@@ -9,12 +10,19 @@ const Home = () => {
       navigate("/login");
     }
   }, [navigate]);
+  const homeHandler = () => {
+    localStorage.setItem("home", 1);
+    navigate("/rules");
+  };
   return (
     <React.Fragment>
       <div className={styles.main}>
         <div className={styles.firstSection}>
           <hi className={styles.h1}>{heading}</hi>
           <p className={styles.p}>{homeText}</p>
+          <Button className={styles.button} onClick={homeHandler}>
+            Lets's Start
+          </Button>
         </div>
         <img src="./img/mind pic.png" alt="mindPic" width="420px" />
       </div>

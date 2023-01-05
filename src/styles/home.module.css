@@ -11,7 +11,7 @@
 .p {
   color: grey;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 .main {
   display: flex;
@@ -20,12 +20,15 @@
   align-items: center;
   /* border: 1px solid black; */
   padding: 20px;
+  transition: 0.5s all ease-in-out;
 }
 .firstSection {
   width: 380px;
   /* height: 300px; */
-  display: flex;
+  /* display: flex; */
+  transition: 0.5s all ease-in-out;
+  margin: 60px 0;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   /* border: 1px solid black; */
 }

@@ -1,0 +1,19 @@
+.footer {
+  /* margin: 0; */
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid silver;
+}
+.icon {
+  cursor: pointer;
+
+  align-self: center;
+  padding: 0 5px;
+  color: black;
+}
+.h1 {
+  color: #7656d6;
+  text-shadow: 0.25px 0.25px 0.5px black;
+}
