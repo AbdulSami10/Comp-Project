@@ -8,7 +8,7 @@ const About = () => {
       navigate("/login");
     }
   }, [navigate]);
-  return <div>About</div>;
+  return <React.Fragment></React.Fragment>;
 };
 
 export default About;

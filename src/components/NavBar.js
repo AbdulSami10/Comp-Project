@@ -1,11 +1,12 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import styles from "../styles/header.module.css";
+import styles from "../styles/navbar.module.css";
 import {
   HomeOutlined,
   InfoCircleOutlined,
   DatabaseOutlined,
 } from "@ant-design/icons";
+import Button from "../UI/Button/Button";
 
 const NavBar = () => {
   const navigate = useNavigate();
@@ -60,9 +61,9 @@ const NavBar = () => {
               <button className={styles.button}>Login</button>
             </NavLink>
           ) : (
-            <button onClick={logout} className={styles.button}>
+            <Button onClick={logout} className={styles.button}>
               Logout
-            </button>
+            </Button>
           )}
         </ul>
       </nav>
