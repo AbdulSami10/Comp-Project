@@ -8,7 +8,7 @@ import {
   MailOutlined,
 } from "@ant-design/icons";
 
-import { heading, mobilePrefix } from "../content";
+import { heading, mobilePrefix } from "../information/content";
 import { useNavigate } from "react-router-dom";
 const LoginForm = () => {
   const navigate = useNavigate();

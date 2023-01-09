@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { heading, homeText } from "../content";
+import { heading, homeText } from "../information/content";
 import styles from "../styles/home.module.css";
 import Button from "../UI/Button/Button";
 const Home = () => {

@@ -7,6 +7,7 @@ import Header from "./menu/Header";
 import About from "./pages/About";
 import Footer from "./menu/Footer";
 import Registration from "./pages/Restration";
+import Services from "./components/Services";
 function App() {
   return (
     <BrowserRouter>
@@ -16,9 +17,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/about" element={<About />} />
-        <Route path="/Rules" element={<Registration />} />
+        <Route path="/Registration" element={<Registration />} />
         <Route path="*" element={<Error />} />
       </Routes>
+      <Services />
       <Footer />
     </BrowserRouter>
   );

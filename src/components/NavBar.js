@@ -4,7 +4,7 @@ import styles from "../styles/navbar.module.css";
 import {
   HomeOutlined,
   InfoCircleOutlined,
-  DatabaseOutlined,
+  FormOutlined,
 } from "@ant-design/icons";
 import Button from "../UI/Button/Button";
 import { Popconfirm, message } from "antd";
@@ -35,10 +35,10 @@ const NavBar = () => {
               About Us <InfoCircleOutlined className={styles.icon} />
             </li>
           </NavLink>
-          <NavLink to={"/rules"} className={styles.navbarLink}>
+          <NavLink to={"/registration"} className={styles.navbarLink}>
             <li>
-              Rules
-              <DatabaseOutlined className={styles.icon} />
+              Registration
+              <FormOutlined className={styles.icon} />
             </li>
           </NavLink>
 
