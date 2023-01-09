@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { heading, homeText } from "../information/content";
 import styles from "../styles/home.module.css";
 import Button from "../UI/Button/Button";
+import Services from "../components/services";
 const Home = () => {
   const navigate = useNavigate();
   useEffect(() => {
@@ -25,6 +26,7 @@ const Home = () => {
         </div>
         <img src="./img/mind pic.png" alt="mindPic" width="420px" />
       </div>
+      <Services />
     </React.Fragment>
   );
 };

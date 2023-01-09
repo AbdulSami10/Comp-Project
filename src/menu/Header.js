@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { CgMenu, CgClose } from "react-icons/cg";
 
 import styles from "../styles/header.module.css";
-import NavBar from "../components/NavBar";
+import NavBar from "../components/navBar";
 import { heading } from "../information/content";
 const Header = () => {
   const mobileNav = useRef();

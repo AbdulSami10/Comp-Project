@@ -1,0 +1,23 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  transition: 0.5s all ease-in-out;
+}
+.shortDescription {
+  color: grey;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.aboutSection {
+  /* margin-bottom: 4rem; */
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.heading {
+  font-size: 5.6rem;
+  margin-bottom: 20px;
+}
