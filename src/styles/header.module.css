@@ -24,10 +24,49 @@
 .navbarLinkHead {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   text-decoration: none;
   align-items: flex-end;
   text-shadow: 0.25px 0.25px 0.5px black;
   color: #7656d6;
   font-size: 1rem;
   transition: color 0.3s linear;
+}
+.menuOpen {
+  display: none;
+  font-size: 1.5rem;
+  transition: 0.25s all ease-in-out;
+  cursor: pointer;
+  color: grey;
+}
+.menuClose {
+  display: none;
+  font-size: 1.5rem;
+  transition: 0.25s all ease-in-out;
+  cursor: pointer;
+  color: grey;
+}
+.mobileNav {
+  display: none;
+}
+@media screen and (max-width: 905px) {
+  .menuOpen {
+    display: flex;
+  }
+  .menuClose {
+    display: flex;
+  }
+  .mobileNav {
+    display: flex;
+    transition: 0.75s;
+    transform: translate(-100px);
+  }
+  .desktopNav {
+    display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  .heading {
+    display: none;
+  }
 }

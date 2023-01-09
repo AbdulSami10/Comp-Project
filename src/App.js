@@ -5,8 +5,8 @@ import Login from "./pages/Login";
 import Error from "./pages/Error";
 import Header from "./menu/Header";
 import About from "./pages/About";
-import Rules from "./pages/Rules";
 import Footer from "./menu/Footer";
+import Registration from "./pages/Restration";
 function App() {
   return (
     <BrowserRouter>
@@ -16,7 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/about" element={<About />} />
-        <Route path="/Rules" element={<Rules />} />
+        <Route path="/Rules" element={<Registration />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />

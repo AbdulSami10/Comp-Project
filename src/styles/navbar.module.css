@@ -34,3 +34,18 @@
   padding: 0 5px;
   color: black;
 }
+@media screen and (max-width: 905px) {
+  .nav {
+    transition: 1s;
+    transform: translate(100px);
+  }
+  .nav ul {
+    flex-direction: column;
+    transition: all 0.3s linear;
+
+    /* justify-content: left; */
+  }
+  .nav li {
+    justify-content: right;
+  }
+}

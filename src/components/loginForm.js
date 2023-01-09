@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Form, Input, InputNumber, Select } from "antd";
+import { Button, Form, Input, InputNumber, Select, message } from "antd";
 import styles from "../styles/login.module.css";
 import {
   LockOutlined,
@@ -20,7 +20,10 @@ const LoginForm = () => {
     navigate("/");
   };
   const onFinishFailed = (errorInfo) => {
-    console.log("Failed:", errorInfo);
+    message.open({
+      type: "error",
+      content: "Please all the required information",
+    });
   };
 
   return (

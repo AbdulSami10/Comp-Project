@@ -1,16 +1,14 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-const Rules = () => {
+const Registration = () => {
   const navigate = useNavigate();
   useEffect(() => {
     if (!localStorage.getItem("userInfo")) {
       navigate("/login");
-    } else if (!localStorage.getItem("home")) {
-      navigate("/");
     }
   }, [navigate]);
   // localStorage.removeItem("home");
-  return <div>Rules</div>;
+  return <div>Registration</div>;
 };
 
-export default Rules;
+export default Registration;

@@ -11,7 +11,6 @@ const Home = () => {
     }
   }, [navigate]);
   const homeHandler = () => {
-    localStorage.setItem("home", 1);
     navigate("/rules");
   };
   return (

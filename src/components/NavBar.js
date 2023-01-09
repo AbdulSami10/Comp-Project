@@ -7,13 +7,17 @@ import {
   DatabaseOutlined,
 } from "@ant-design/icons";
 import Button from "../UI/Button/Button";
+import { Popconfirm, message } from "antd";
 
 const NavBar = () => {
   const navigate = useNavigate();
   const logout = () => {
     localStorage.removeItem("userInfo");
     localStorage.removeItem("home");
-
+    message.open({
+      type: "success",
+      content: "Successfully Logout",
+    });
     navigate("/login");
   };
   return (
@@ -58,12 +62,16 @@ const NavBar = () => {
 
           {!localStorage.getItem("userInfo") ? (
             <NavLink to={"/login"} className={styles.navbarLink}>
-              <button className={styles.button}>Login</button>
+              <Button className={styles.button}>Login</Button>
             </NavLink>
           ) : (
-            <Button onClick={logout} className={styles.button}>
-              Logout
-            </Button>
+            <Popconfirm
+              title="Logout"
+              description="are sure you want to logout"
+              onConfirm={logout}
+            >
+              <Button className={styles.button}>Logout</Button>
+            </Popconfirm>
           )}
         </ul>
       </nav>
