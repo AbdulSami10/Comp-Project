@@ -10,6 +10,11 @@ const cardThreeHeading = "Live Session";
 const aboutHeading = "About Us";
 const aboutDescription =
   "DR.Brain, a mind checking where you can check your mind by solving some quizzez or doing some brain testes laso you can attend live session and at the end,We will give suggestion according to your performed activity";
+const regFormHeading = "Registration Form";
+
+const interestedStudy = "What course/courses are you interested in studying";
+const hearAboutUs = "How did you hear about us?";
+const curCourses = "Name of course/s you are currently enrolled in:";
 export {
   heading,
   homeHeading,
@@ -21,4 +26,8 @@ export {
   cardThreeHeading,
   aboutHeading,
   aboutDescription,
+  regFormHeading,
+  hearAboutUs,
+  curCourses,
+  interestedStudy,
 };

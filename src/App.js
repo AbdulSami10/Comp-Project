@@ -7,6 +7,9 @@ import Header from "./menu/Header";
 import About from "./pages/About";
 import Footer from "./menu/Footer";
 import Registration from "./pages/Restration";
+import Quiz from "./pages/Quiz";
+import Brain from "./pages/Brain";
+import Live from "./pages/Live";
 function App() {
   return (
     <BrowserRouter>
@@ -16,7 +19,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/about" element={<About />} />
-        <Route path="/Registration" element={<Registration />} />
+        <Route path="/registration" element={<Registration />} />
+        <Route path="/quiz" element={<Quiz />} />
+        <Route path="/brain" element={<Brain />} />
+        <Route path="/live" element={<Live />} />
+
         <Route path="*" element={<Error />} />
       </Routes>
 
