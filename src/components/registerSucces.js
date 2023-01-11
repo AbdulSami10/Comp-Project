@@ -1,3 +1,4 @@
+import { Popconfirm, Result } from "antd";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../UI/Button/Button";
@@ -10,7 +11,19 @@ const RegisterSucces = () => {
   };
   return (
     <React.Fragment>
-      <Button onClick={logoutHandler}>Logout</Button>
+      <Result
+        title="You are already Registered"
+        status="success"
+        extra={[
+          <Popconfirm
+            title="Sign-Out"
+            description="are you want to cancel your registereation"
+            onConfirm={logoutHandler}
+          >
+            <Button>Sign-Out</Button>
+          </Popconfirm>,
+        ]}
+      />
     </React.Fragment>
   );
 };

@@ -12,7 +12,7 @@ const Home = () => {
     }
   }, [navigate]);
   const homeHandler = () => {
-    navigate("/rules");
+    navigate("/about");
   };
   return (
     <React.Fragment>
