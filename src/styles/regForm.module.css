@@ -1,5 +1,40 @@
 .flexSection {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  justify-content: space-between;
+  gap: 2rem;
+  /* padding: 0 10px; */
+}
+.formMain {
+  margin: auto;
+  max-width: 570px;
+  /* box-shadow: 5px 4px 20px black; */
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 20px;
+}
+/* label {
+  color: white;
+} */
+.main {
+  /* background: linear-gradient(
+    173deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  ); */
+  /* background-color: cyan;
+   */
+  background: url("./img/regFormBg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background: rgb(195, 77, 34);
+  background: linear-gradient(
+    173deg,
+    rgba(195, 77, 34, 1) 0%,
+    rgba(45, 175, 253, 1) 100%
+  ); */
+  border-radius: 10px;
+  padding: 20px;
+  /* border: 3px solid grey; */
+  /* background: linear-gradient(#7656d6, white); */
 }

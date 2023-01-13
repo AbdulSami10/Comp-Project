@@ -4,10 +4,13 @@ import { heading, homeText } from "../information/content";
 import styles from "../styles/home.module.css";
 import Button from "../UI/Button/Button";
 import Services from "../components/services";
+import { message } from "antd";
 const Home = () => {
   const navigate = useNavigate();
   useEffect(() => {
     if (!localStorage.getItem("userInfo")) {
+      message.open({ type: "error", content: "You are not authorized" });
+
       navigate("/login");
     }
   }, [navigate]);

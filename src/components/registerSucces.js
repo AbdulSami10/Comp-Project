@@ -1,4 +1,4 @@
-import { Popconfirm, Result } from "antd";
+import { message, Popconfirm, Result } from "antd";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../UI/Button/Button";
@@ -7,6 +7,10 @@ const RegisterSucces = () => {
   const navigate = useNavigate();
   const logoutHandler = () => {
     localStorage.removeItem("live");
+    message.open({
+      type: "success",
+      content: "Succesfully Sign-out",
+    });
     navigate("/registration");
   };
   return (

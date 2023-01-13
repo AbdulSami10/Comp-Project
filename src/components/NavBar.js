@@ -13,7 +13,7 @@ const NavBar = () => {
   const navigate = useNavigate();
   const logout = () => {
     localStorage.removeItem("userInfo");
-    localStorage.removeItem("home");
+    localStorage.removeItem("live");
     message.open({
       type: "success",
       content: "Successfully Logout",
