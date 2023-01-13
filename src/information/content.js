@@ -18,6 +18,10 @@ const regFormHeading = "Registration Form";
 const interestedStudy = "What course/courses are you interested in studying";
 const hearAboutUs = "How did you hear about us?";
 const curCourses = "Name of course/s you are currently enrolled in:";
+const quizStHead = "Welcome To,";
+const quizSthead2 = "Quiz Section";
+const quizStpara =
+  "In this section you can solve basic MCQS,for each question you have four options you can select them by clicking on given options and after selecting you can click on next for next one and also if you want to skip the question you can just click on Next ";
 export {
   heading,
   homeHeading,
@@ -34,4 +38,7 @@ export {
   hearAboutUs,
   curCourses,
   interestedStudy,
+  quizStHead,
+  quizSthead2,
+  quizStpara,
 };

@@ -25,7 +25,7 @@ const Quiz = () => {
   return (
     <React.Fragment>
       <div className={styles.main}>
-        <H1>Quiz</H1>
+        <H1 className={styles.heading}>Quiz</H1>
         {result ? (
           <QuizResult setResult={setResult} />
         ) : (

@@ -6,16 +6,27 @@
   /* padding: 0 10px; */
 }
 .formMain {
-  margin: auto;
-  max-width: 570px;
+  /* margin: auto; */
+  /* max-width: 570px; */
   /* box-shadow: 5px 4px 20px black; */
-  border-radius: 5px;
-  margin-top: 10px;
-  padding: 20px;
+  /* border-radius: 5px; */
+  /* margin-top: 10px; */
+  /* padding: 20px; */
+
+  /* background: linear-gradient(pink, green, pink, green); */
+  /* background: url("./img/regFormBg.jpg"); */
+
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  font-family: sans-serif;
 }
-/* label {
+label {
   color: white;
-} */
+  color: #7656d6;
+  font-weight: bolder;
+  text-shadow: 0 0 1.1px black;
+}
+
 .main {
   /* background: linear-gradient(
     173deg,
@@ -24,17 +35,22 @@
   ); */
   /* background-color: cyan;
    */
-  background: url("./img/regFormBg.jpg");
+  /* background: url("./img/regFormBg.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   /* background: rgb(195, 77, 34);
   background: linear-gradient(
     173deg,
     rgba(195, 77, 34, 1) 0%,
     rgba(45, 175, 253, 1) 100%
   ); */
+  /* background-color: whitesmoke; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   border-radius: 10px;
   padding: 20px;
+  /* align-items: center; */
   /* border: 3px solid grey; */
   /* background: linear-gradient(#7656d6, white); */
 }
