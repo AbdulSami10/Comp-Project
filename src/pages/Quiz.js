@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import QuizMcqs from "../components/quizMcqs";
 import QuizResult from "../components/quizResult";
 import QuizStart from "../components/quizStart";
+import { demoQuiz } from "../information/demoQuiz";
 import styles from "../styles/quiz.module.css";
 import H1 from "../UI/H1/H1";
 const Quiz = () => {
@@ -20,20 +21,41 @@ const Quiz = () => {
       navigate("/");
     }
   }, [navigate]);
+
   const [start, setStart] = useState(true);
   const [result, setResult] = useState(false);
+  const [correct, setCorrect] = useState(0);
+  const per = (correct / demoQuiz.length) * 100;
+  console.log(per);
   return (
     <React.Fragment>
       <div className={styles.main}>
         <H1 className={styles.heading}>Quiz</H1>
         {result ? (
-          <QuizResult setResult={setResult} />
+          <QuizResult
+            setResult={setResult}
+            correct={correct}
+            percentage={per}
+          />
         ) : (
           <>
             {start ? (
               <QuizStart setStart={setStart} />
             ) : (
-              <QuizMcqs setResult={setResult} />
+              <div className={styles.quizMc}>
+                <img
+                  src="./img/quizMc.jpg"
+                  width="500"
+                  height="320"
+                  alt="quizMCQsImage"
+                />
+                <QuizMcqs
+                  setResult={setResult}
+                  correct={correct}
+                  setCorrect={setCorrect}
+                  percentage={per}
+                />
+              </div>
             )}
           </>
         )}

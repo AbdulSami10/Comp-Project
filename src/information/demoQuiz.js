@@ -5,7 +5,7 @@ const demoQuiz = [
     b: "Animal",
     c: "Plant",
     d: "Chair",
-    correct: "a",
+    correct: "d",
   },
   {
     title: "How many teeth does",

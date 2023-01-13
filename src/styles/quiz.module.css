@@ -9,15 +9,30 @@
 .heading {
   font-size: 5rem;
 }
+.quizMc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.quizMc img {
+  border: 1px solid black;
+}
+@media screen and (max-width: 600px) {
+  .quizMc img {
+    display: none;
+  }
+}
+
 .quizMcMain {
-  margin: auto;
-  width: 60%;
+  /* margin: auto; */
+  width: 600px;
   border: 1px solid grey;
   text-align: center;
   padding: 20px;
   margin-bottom: 20px;
-  background-color: rgba(178, 34, 34, 0.384);
-  background: url("./img/quizMcOpt.webp");
+  background-color: white;
+  /* background: url("./img/quizMcOpt.webp"); */
   background-size: cover;
   box-shadow: 2px 10px 30px 2px black;
   margin-top: 20px;
@@ -29,8 +44,8 @@
 }
 
 .exitIcon {
-  color: white;
-  font-size: 1.8rem;
+  color: #7656d6;
+  font-size: 2rem;
   /* position: relative; */
   /* top: 40%;
   left: 25%; */
@@ -41,8 +56,9 @@
   color: black;
 }
 .quizMcCur {
-  color: white;
-  /* color: #7656d6; */
+  /* color: white; */
+  color: #7656d6;
+  text-shadow: 1px 0 1.2px black;
   /* position: relative; */
   /* top: 37%;
   left: 70%; */
@@ -57,29 +73,42 @@
   /* grid-template-rows: repeat(2, 50%); */
 }
 .quizMcTitle {
-  color: white;
+  /* color: white; */
+  /* text-shadow: 1px 0 1.2px black; */
+  text-decoration: underline;
+  color: grey;
   font-weight: bolder;
+}
+.quizMcOpt {
+  border: 1px solid grey;
+  padding: 10px 5px;
+  color: grey;
+  font-weight: 700;
 }
 .quizMcOptActive {
   background-color: #7656d6;
   color: white;
 }
-.quizMcOpt {
-  border: 1px solid white;
-  padding: 10px 5px;
-  color: white;
-  font-weight: 700;
-}
+
 .quizMcOpt:hover {
   background-color: #7656d6;
   transition: 0.5s all;
   cursor: pointer;
   color: white;
 }
+.cancelBtn {
+  background-color: green;
+  border: 1px solid black;
+  border-radius: 0;
+}
+.cancelBtn:hover {
+  background-color: rgba(0, 128, 0, 0.507);
+}
 .nxtBtn {
   border-radius: 0;
   border: 1px solid black;
 }
+
 .resetBtn {
   background-color: red;
   border-radius: 0;
@@ -118,4 +147,23 @@
 }
 .quizBtn {
   font-size: small;
+}
+.quizResMain {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.quizResMain div {
+  width: 500px;
+}
+.quizResMain div h2 {
+  text-transform: uppercase;
+  color: green;
+}
+.quizResMain div p {
+  color: grey;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

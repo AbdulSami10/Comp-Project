@@ -3,13 +3,17 @@ import { demoQuiz } from "../information/demoQuiz";
 import Button from "../UI/Button/Button";
 import { GiExitDoor } from "react-icons/gi";
 import styles from "../styles/quiz.module.css";
-import { Popconfirm } from "antd";
+import { Popconfirm, Progress } from "antd";
 import { useNavigate } from "react-router-dom";
 
 const QuizMcqs = (props) => {
   const navigate = useNavigate();
   const [queNo, setQueNo] = useState(0);
-  const [correct, setCorrect] = useState(1);
+  const [showResult, setShowResult] = useState(false);
+  const correct = props.correct;
+  const setCorrect = props.setCorrect;
+  const percentage = props.percentage;
+  const setResult = props.setResult;
 
   const [ans, setAns] = useState("");
   const que = demoQuiz[queNo];
@@ -17,7 +21,7 @@ const QuizMcqs = (props) => {
     if (queNo !== demoQuiz.length - 1) {
       setQueNo(queNo + 1);
     } else {
-      props.setResult(true);
+      setShowResult(true);
     }
 
     if (que.correct === ans) {
@@ -37,6 +41,12 @@ const QuizMcqs = (props) => {
     setCorrect(1);
     setAns("");
     navigate("/");
+  };
+  const cancel = () => {
+    setAns("");
+  };
+  const result = () => {
+    setResult(true);
   };
   return (
     <React.Fragment>
@@ -107,13 +117,24 @@ const QuizMcqs = (props) => {
             d)&nbsp;{que.d}
           </p>
         </div>
+
         <Button onClick={next} className={styles.nxtBtn}>
           Next
         </Button>
+        <Button className={styles.cancelBtn} onClick={cancel}>
+          Cancel
+        </Button>
+
         <Button onClick={reset} className={styles.resetBtn}>
           Reset
         </Button>
+        {showResult && (
+          <Button onClick={result} className={styles.cancelBtn}>
+            Result
+          </Button>
+        )}
       </div>
+      <Progress percent={percentage} />
     </React.Fragment>
   );
 };

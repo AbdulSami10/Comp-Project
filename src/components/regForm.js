@@ -38,14 +38,14 @@ const RegForm = () => {
           onFinishFailed={submitFailed}
           className={styles.formMain}
         >
-          <label>{interestedStudy}</label>
+          <label className={styles.label}>{interestedStudy}</label>
           <Form.Item name="interestedStudy">
             <Input
               placeholder="Provide Details:(optional)"
               className={styles.input}
             />
           </Form.Item>
-          <label>{hearAboutUs}</label>
+          <label className={styles.label}>{hearAboutUs}</label>
 
           <Form.Item name="hearAboutUs">
             <Input
@@ -57,7 +57,7 @@ const RegForm = () => {
 
           <div className={styles.flexSection}>
             <div>
-              <label>Name</label>
+              <label className={styles.label}>Name</label>
               <Form.Item
                 name="name"
                 // label="Name"
@@ -67,7 +67,7 @@ const RegForm = () => {
               </Form.Item>
             </div>
             <div>
-              <label>Title</label>
+              <label className={styles.label}>Title</label>
               <Form.Item
                 name="title"
                 // label="Title"
@@ -104,7 +104,7 @@ const RegForm = () => {
           </div>
           <div className={styles.flexSection}>
             <div>
-              <label>Former Name</label>
+              <label className={styles.label}>Former Name</label>
               <Form.Item
                 name="familyName"
                 // label="Former Name"
@@ -114,7 +114,7 @@ const RegForm = () => {
               </Form.Item>
             </div>
             <div>
-              <label>Date of Birth</label>
+              <label className={styles.label}>Date of Birth</label>
               <Form.Item
                 name="birthdate"
                 // label="Date of Birth"
@@ -127,11 +127,11 @@ const RegForm = () => {
             </div>
           </div>
           <Form.Item name="curCourse">
-            <label>{curCourses}</label>
+            <label className={styles.label}>{curCourses}</label>
             <Input placeholder="(Optional)" className={styles.input} />
           </Form.Item>
           <h3>Contact Details</h3>
-          <label>Address</label>
+          <label className={styles.label}>Address</label>
 
           <Form.Item
             rules={[{ required: true, message: "Enter your Address" }]}
@@ -141,7 +141,7 @@ const RegForm = () => {
           </Form.Item>
           <div className={styles.flexSection}>
             <div>
-              <label>E-mail</label>
+              <label className={styles.label}>E-mail</label>
               <Form.Item
                 name="email"
                 // label="E-mail"
@@ -156,7 +156,7 @@ const RegForm = () => {
               </Form.Item>
             </div>
             <div>
-              <label>Phone-No</label>
+              <label className={styles.label}>Phone-No</label>
               <Form.Item
                 //   label="Phone No  "
                 name="phoneNo"
