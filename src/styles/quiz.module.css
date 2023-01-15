@@ -76,13 +76,13 @@
   /* color: white; */
   /* text-shadow: 1px 0 1.2px black; */
   text-decoration: underline;
-  color: grey;
+  color: black;
   font-weight: bolder;
 }
 .quizMcOpt {
-  border: 1px solid grey;
+  border: 1px solid black;
   padding: 10px 5px;
-  color: grey;
+  color: black;
   font-weight: 700;
 }
 .quizMcOptActive {

@@ -108,6 +108,10 @@ const LoginForm = () => {
                   value: "female",
                   label: "Female",
                 },
+                {
+                  value: "other",
+                  label: "Other",
+                },
               ]}
             />
           </Form.Item>
@@ -131,6 +135,14 @@ const LoginForm = () => {
                 {
                   value: "biology",
                   label: "Biology",
+                },
+                {
+                  value: "arts",
+                  label: "Arts",
+                },
+                {
+                  value: "commerce",
+                  label: "Commerce",
                 },
               ]}
             />

@@ -1,4 +1,4 @@
-const demoQuiz = [
+const quiz = [
   {
     title: "All are living thing except",
     a: "Human",
@@ -80,4 +80,4 @@ const demoQuiz = [
     correct: "a",
   },
 ];
-export { demoQuiz };
+export { quiz };

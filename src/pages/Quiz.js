@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import QuizMcqs from "../components/quizMcqs";
 import QuizResult from "../components/quizResult";
 import QuizStart from "../components/quizStart";
-import { demoQuiz } from "../information/demoQuiz";
+import { quiz } from "../information/quiz";
 import styles from "../styles/quiz.module.css";
 import H1 from "../UI/H1/H1";
 const Quiz = () => {
@@ -25,7 +25,7 @@ const Quiz = () => {
   const [start, setStart] = useState(true);
   const [result, setResult] = useState(false);
   const [correct, setCorrect] = useState(0);
-  const per = (correct / demoQuiz.length) * 100;
+  let per = (correct / quiz.length) * 100;
   console.log(per);
   return (
     <React.Fragment>
@@ -36,6 +36,7 @@ const Quiz = () => {
             setResult={setResult}
             correct={correct}
             percentage={per}
+            setCorrect={setCorrect}
           />
         ) : (
           <>

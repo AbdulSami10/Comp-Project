@@ -1,27 +1,31 @@
 import React, { useState } from "react";
-import { demoQuiz } from "../information/demoQuiz";
+
 import Button from "../UI/Button/Button";
 import { GiExitDoor } from "react-icons/gi";
 import styles from "../styles/quiz.module.css";
-import { Popconfirm, Progress } from "antd";
+import { message, Popconfirm, Progress } from "antd";
 import { useNavigate } from "react-router-dom";
+import { quiz } from "../information/quiz";
 
 const QuizMcqs = (props) => {
   const navigate = useNavigate();
   const [queNo, setQueNo] = useState(0);
-  const [showResult, setShowResult] = useState(false);
+
   const correct = props.correct;
   const setCorrect = props.setCorrect;
-  const percentage = props.percentage;
+  let percentage = props.percentage;
   const setResult = props.setResult;
 
   const [ans, setAns] = useState("");
-  const que = demoQuiz[queNo];
+  const que = quiz[queNo];
   const next = () => {
-    if (queNo !== demoQuiz.length - 1) {
+    if (queNo !== quiz.length - 1) {
       setQueNo(queNo + 1);
     } else {
-      setShowResult(true);
+      message.open({ type: "info", content: "Loading", duration: "0.5" });
+      setTimeout(() => {
+        setResult(true);
+      }, 500);
     }
 
     if (que.correct === ans) {
@@ -32,7 +36,7 @@ const QuizMcqs = (props) => {
   };
   const reset = () => {
     setQueNo(0);
-    setCorrect(1);
+    setCorrect(0);
     setAns("");
   };
   const exitHandler = () => {
@@ -45,9 +49,7 @@ const QuizMcqs = (props) => {
   const cancel = () => {
     setAns("");
   };
-  const result = () => {
-    setResult(true);
-  };
+
   return (
     <React.Fragment>
       <div className={styles.quizMcMain}>
@@ -60,7 +62,7 @@ const QuizMcqs = (props) => {
             <GiExitDoor className={styles.exitIcon} />
           </Popconfirm>
           <p className={styles.quizMcCur}>
-            {queNo + 1} Out Of {demoQuiz.length}
+            {queNo + 1} Out Of {quiz.length}
           </p>
         </div>
         <h2 className={styles.quizMcTitle}>
@@ -128,11 +130,6 @@ const QuizMcqs = (props) => {
         <Button onClick={reset} className={styles.resetBtn}>
           Reset
         </Button>
-        {showResult && (
-          <Button onClick={result} className={styles.cancelBtn}>
-            Result
-          </Button>
-        )}
       </div>
       <Progress percent={percentage} />
     </React.Fragment>

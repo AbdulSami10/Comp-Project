@@ -1,6 +1,6 @@
 .form {
   /* margin: auto; */
-  max-width: 50%;
+  max-width: 500px;
   color: white;
   background-color: whitesmoke;
   border-radius: 20px;
@@ -15,7 +15,7 @@
 }
 .main {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -26,6 +26,8 @@
 }
 .h1 {
   text-align: center;
+  display: flex;
+  justify-content: center;
   color: #7656d6;
   text-shadow: 1px 1px 2px black;
   font-size: 50px;

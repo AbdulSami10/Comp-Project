@@ -32,7 +32,7 @@ const Services = () => {
           hoverable
           onClick={quizCard}
           className={styles.card}
-          cover={<img src="./img/QUIZ.webp" alt="quizImage" />}
+          cover={<img src="./img/quiz.webp" alt="quizImage" />}
         >
           <h1 className={styles.cardHeading}>{cardOneHeading}</h1>
         </Card>
