@@ -13,7 +13,7 @@ const Live = () => {
     }
   }, [navigate]);
 
-  return <div>Live</div>;
+  return <div>Under Working..........</div>;
 };
 
 export default Live;

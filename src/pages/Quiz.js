@@ -35,7 +35,7 @@ const Quiz = () => {
           <QuizResult
             setResult={setResult}
             correct={correct}
-            percentage={per}
+            percentage={per.toFixed()}
             setCorrect={setCorrect}
           />
         ) : (
@@ -46,15 +46,15 @@ const Quiz = () => {
               <div className={styles.quizMc}>
                 <img
                   src="./img/quizMc.jpg"
-                  width="500"
-                  height="320"
+                  width="340"
+                  height="340"
                   alt="quizMCQsImage"
                 />
                 <QuizMcqs
                   setResult={setResult}
                   correct={correct}
                   setCorrect={setCorrect}
-                  percentage={per}
+                  percentage={per.toFixed()}
                 />
               </div>
             )}

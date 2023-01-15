@@ -1,0 +1,19 @@
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.subHead {
+  font-size: 3rem;
+}
+.sectionOne {
+  width: 700px;
+
+  padding: 10px;
+}
+.main ol {
+  color: grey;
+  font-size: 1.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

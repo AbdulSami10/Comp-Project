@@ -14,7 +14,7 @@ const Brain = () => {
       navigate("/");
     }
   }, [navigate]);
-  return <div>Brain</div>;
+  return <div>Working............</div>;
 };
 
 export default Brain;

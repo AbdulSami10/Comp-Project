@@ -26,6 +26,18 @@ const quizResBest = "Congratulations You are very Intelligent";
 const quizResWorst = "Sorry to say but your fail better luck next time";
 const quizResNorml =
   "Your result is normal you can practise more for better percentage";
+const ruleHeading = "Rules";
+const ruleSubHeading = "Most Important";
+const ruleOne = "Trust is the biggest rule of everything.";
+const ruleTwo = "Dont cheat from any other resources to solve excersice.";
+const ruleThree =
+  " If you are click on next in Quiz section your unable to come back that MCQs again.";
+const ruleFour = "You should be register for using live session.";
+const ruleFive = "Dont try to break our algorithm.";
+const ruleSix =
+  " Its just a educational website,If we are wrong at any place,Please do correct us.";
+const ruleSeven =
+  "Brain test is a result of your brain after solving our excersice.";
 export {
   heading,
   homeHeading,
@@ -48,4 +60,13 @@ export {
   quizResBest,
   quizResWorst,
   quizResNorml,
+  ruleHeading,
+  ruleSubHeading,
+  ruleOne,
+  ruleTwo,
+  ruleThree,
+  ruleFour,
+  ruleFive,
+  ruleSix,
+  ruleSeven,
 };

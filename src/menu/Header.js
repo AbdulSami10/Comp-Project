@@ -21,7 +21,7 @@ const Header = () => {
     <div>
       <div className={styles.main}>
         <NavLink to={"/"} className={styles.navbarLinkHead}>
-          <img src="./img/LOGO.png" alt="logo" className={styles.logo} />
+          <img src="./img/logo.png" alt="logo" className={styles.logo} />
           <h3 className={styles.heading}>{heading}</h3>
         </NavLink>
         {!menu ? (
