@@ -4,7 +4,7 @@ import { CgMenu, CgClose } from "react-icons/cg";
 
 import styles from "../styles/header.module.css";
 import NavBar from "../components/navBar";
-import { heading } from "../information/content";
+import { heading } from "../data/index";
 const Header = () => {
   const mobileNav = useRef();
   const [menu, setMenu] = useState(false);

@@ -4,9 +4,8 @@ import {
   quizResBest,
   quizResNorml,
   quizResWorst,
-} from "../information/content";
-import { quiz } from "../information/quiz";
-
+} from "../data/content/quiz/index";
+import { quiz } from "../data/content/quiz/quizContent";
 import styles from "../styles/quiz.module.css";
 import Button from "../UI/Button/Button";
 

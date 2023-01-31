@@ -7,7 +7,7 @@ import {
   cardOneHeading,
   cardThreeHeading,
   cardTwoHeading,
-} from "../information/content";
+} from "../data/content/home/index";
 
 const Services = () => {
   const navigate = useNavigate();

@@ -9,7 +9,7 @@ import {
   ruleSubHeading,
   ruleThree,
   ruleTwo,
-} from "../information/content";
+} from "../data/content/about-rule/index";
 import styles from "../styles/rules.module.css";
 import H1 from "../UI/H1/H1";
 const Rules = () => {

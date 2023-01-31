@@ -5,7 +5,7 @@ import { GiExitDoor } from "react-icons/gi";
 import styles from "../styles/quiz.module.css";
 import { message, Popconfirm, Progress } from "antd";
 import { useNavigate } from "react-router-dom";
-import { quiz } from "../information/quiz";
+import { quiz } from "../data/content/quiz/quizContent";
 
 const QuizMcqs = (props) => {
   const navigate = useNavigate();

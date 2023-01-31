@@ -1,0 +1,92 @@
+.main {
+  background-color: whitesmoke;
+}
+.brainStartMain {
+  display: flex;
+  /* width: 500px; */
+  flex-wrap: wrap;
+  margin: 20px 100px;
+  padding: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: whitesmoke;
+}
+.brainStartMain div {
+  width: 400px;
+}
+.brainStartMain p {
+  color: grey;
+  font-family: "Times New Roman", Times, serif;
+  /* font-size: 0.75rem; */
+  width: 350px;
+  margin: 10px auto;
+  text-align: center;
+}
+.brainStartBtn {
+  font-size: small;
+  width: 400px;
+  margin: 10px auto;
+}
+.brainStartHeading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+.chapHead {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.chapOneMain {
+  width: 400px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+.chapOneMain h2 {
+  color: brown;
+  text-transform: uppercase;
+  /* margin: 0; */
+}
+.chapOneMain p {
+  color: grey;
+  text-transform: lowercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.chapOneMain div {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.chapTwoMain h2 {
+  color: brown;
+  text-transform: uppercase;
+  text-align: center;
+  /* margin: 0; */
+}
+.chapTwoSub {
+  width: 400px;
+  margin: auto;
+  text-align: center;
+}
+.chapTwoSub > h1 {
+  font-size: 3rem;
+}
+.chapTwoSub div {
+  display: flex;
+  justify-content: space-around;
+}
+.chapTwoSub div > h1 {
+  border: 1px solid grey;
+  padding: 7px 20px;
+  font-size: 1.7rem;
+  background-color: rgba(128, 128, 128, 0.048);
+  transition: 0.5s all;
+  border-radius: 5px;
+}
+.chapTwoSub div > h1:hover {
+  background-color: rgba(128, 128, 128, 0.37);
+
+  cursor: pointer;
+}

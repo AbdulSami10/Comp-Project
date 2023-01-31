@@ -8,7 +8,7 @@ import {
   hearAboutUs,
   interestedStudy,
   regFormHeading,
-} from "../information/content";
+} from "../data/content/login/index.js";
 import { useNavigate } from "react-router-dom";
 
 const RegForm = () => {

@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import QuizMcqs from "../components/quizMcqs";
 import QuizResult from "../components/quizResult";
 import QuizStart from "../components/quizStart";
-import { quiz } from "../information/quiz";
+import { quiz } from "../data/content/quiz/quizContent";
 import styles from "../styles/quiz.module.css";
 import H1 from "../UI/H1/H1";
 const Quiz = () => {

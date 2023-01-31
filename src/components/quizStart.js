@@ -1,7 +1,11 @@
 import React from "react";
 import H1 from "../UI/H1/H1";
 import styles from "../styles/quiz.module.css";
-import { quizStHead, quizSthead2, quizStpara } from "../information/content";
+import {
+  quizStHead,
+  quizSthead2,
+  quizStpara,
+} from "../data/content/quiz/index";
 import Button from "../UI/Button/Button";
 
 const QuizStart = (props) => {

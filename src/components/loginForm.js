@@ -1,6 +1,7 @@
 import React from "react";
-import { Button, Form, Input, InputNumber, Select, message } from "antd";
+import { Form, Input, InputNumber, Select, message } from "antd";
 import styles from "../styles/login.module.css";
+import Button from "../UI/Button/Button";
 import {
   LockOutlined,
   UserOutlined,
@@ -8,16 +9,37 @@ import {
   MailOutlined,
 } from "@ant-design/icons";
 
-import { heading, mobilePrefix } from "../information/content";
+import { heading } from "../data/index";
+import { mobilePrefix } from "../data/content/login";
 import { useNavigate } from "react-router-dom";
+import { useForm } from "@formspree/react";
 const LoginForm = () => {
   const navigate = useNavigate();
-
-  const onFinish = (values) => {
-    console.log("Success:", values);
-    localStorage.setItem("userInfo", JSON.stringify(values));
-
-    navigate("/");
+  const [state, handleSubmit] = useForm("xgebvodw");
+  const onFinish = async (values) => {
+    try {
+      const respond = await fetch(
+        "https://drbrain-e1efb-default-rtdb.firebaseio.com/data.json",
+        {
+          method: "POST",
+          body: JSON.stringify(values),
+          headers: {
+            "Content-Type": "application/Json",
+          },
+        }
+      );
+      if (!respond.ok) {
+        throw new Error("Some thing Went Wrong Try Again");
+      }
+      const data = await respond.json;
+      console.log(data);
+      console.log("Success:", values);
+      localStorage.setItem("userInfo", JSON.stringify(values));
+      handleSubmit(values);
+      navigate("/");
+    } catch (error) {
+      console.log(error);
+    }
   };
   const onFinishFailed = (errorInfo) => {
     message.open({
@@ -25,11 +47,12 @@ const LoginForm = () => {
       content: "Please all the required information",
     });
   };
-
   return (
     <React.Fragment>
       <Form
         name="basic"
+        method="POST"
+        action="https://formspree.io/f/xgebvodw"
         className={styles.form}
         onFinish={onFinish}
         onFinishFailed={onFinishFailed}
@@ -161,7 +184,7 @@ const LoginForm = () => {
           </Form.Item>
         </div>
         <Form.Item>
-          <Button type="primary" htmlType="submit" className={styles.button}>
+          <Button type="submit" className={styles.button}>
             Submit
           </Button>
         </Form.Item>
