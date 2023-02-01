@@ -3,11 +3,11 @@ import { useNavigate } from "react-router-dom";
 import React from "react";
 import H1 from "../UI/H1/H1";
 import styles from "../styles/services.module.css";
-import {
-  cardOneHeading,
-  cardThreeHeading,
-  cardTwoHeading,
-} from "../data/content/home/index";
+// import {
+//   cardOneHeading,
+//   cardThreeHeading,
+//   cardTwoHeading,
+// } from "../data/content/home/index";
 
 const Services = () => {
   const navigate = useNavigate();
