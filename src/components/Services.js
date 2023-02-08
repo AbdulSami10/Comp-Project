@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "antd";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import H1 from "../UI/H1/H1";
 import styles from "../styles/services.module.css";
 import {
@@ -52,8 +52,8 @@ const Services = () => {
           }`}
           cover={<img src="./img/live.webp" alt="quizImage" />}
         >
-          <div className={styles.overlay} />
-          <h1 className={styles.cardHeading}>{cardThreeHeading}</h1>
+          {/* <div className={styles.overlay} />
+          <h1 className={styles.cardHeading}>{cardThreeHeading}</h1> */}
         </Card>
       </div>
     </section>

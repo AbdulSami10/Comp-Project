@@ -29,8 +29,8 @@ const Brain = () => {
   const [rightPercentPoint, setRightPercentPoint] = useState(1);
   const [leftPercentPoint, setLeftPercentPoint] = useState(0);
 
-  const rightPercentage = (rightPercentPoint / 8) * 100;
-  const leftPercentage = (leftPercentPoint / 8) * 100;
+  const rightPercentage = (rightPercentPoint / 9) * 100;
+  const leftPercentage = (leftPercentPoint / 9) * 100;
 
   return (
     <React.Fragment>
@@ -64,8 +64,8 @@ const Brain = () => {
         )}
         {brainTestResult && (
           <BrainTestResult
-            rightPercentage={rightPercentage}
-            leftPercentage={leftPercentage}
+            rightPercentage={rightPercentage.toFixed()}
+            leftPercentage={leftPercentage.toFixed()}
           />
         )}
       </div>
