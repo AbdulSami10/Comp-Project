@@ -25,38 +25,39 @@ const Services = () => {
     }
   };
   return (
-    <section className={styles.serviceSection}>
-      <H1>Our Services</H1>
-      <div className={styles.cardMain}>
-        <Card
-          hoverable
-          onClick={quizCard}
-          className={styles.card}
-          cover={<img src="./img/quiz.webp" alt="quizImage" />}
-        >
-          <h1 className={styles.cardHeading}>{cardOneHeading}</h1>
-        </Card>
-        <Card
-          hoverable
-          onClick={brainCard}
-          className={styles.card}
-          cover={<img src="./img/brain.webp" alt="quizImage" />}
-        >
-          <h1 className={styles.cardHeading}>{cardTwoHeading}</h1>
-        </Card>
-        <Card
-          hoverable
-          onClick={liveCard}
-          className={`${
-            localStorage.getItem("live") ? styles.card : styles.cardBlock
-          }`}
-          cover={<img src="./img/live.webp" alt="quizImage" />}
-        >
-          {/* <div className={styles.overlay} />
-          <h1 className={styles.cardHeading}>{cardThreeHeading}</h1> */}
-        </Card>
-      </div>
-    </section>
+    <></>
+    // <section className={styles.serviceSection}>
+    //   <H1>Our Services</H1>
+    //   <div className={styles.cardMain}>
+    //     <Card
+    //       hoverable
+    //       onClick={quizCard}
+    //       className={styles.card}
+    //       cover={<img src="./img/quiz.webp" alt="quizImage" />}
+    //     >
+    //       <h1 className={styles.cardHeading}>{cardOneHeading}</h1>
+    //     </Card>
+    //     <Card
+    //       hoverable
+    //       onClick={brainCard}
+    //       className={styles.card}
+    //       cover={<img src="./img/brain.webp" alt="quizImage" />}
+    //     >
+    //       <h1 className={styles.cardHeading}>{cardTwoHeading}</h1>
+    //     </Card>
+    //     <Card
+    //       hoverable
+    //       onClick={liveCard}
+    //       className={`${
+    //         localStorage.getItem("live") ? styles.card : styles.cardBlock
+    //       }`}
+    //       cover={<img src="./img/live.webp" alt="quizImage" />}
+    //     >
+    //       <div className={styles.overlay} />
+    //       <h1 className={styles.cardHeading}>{cardThreeHeading}</h1>
+    //     </Card>
+    //   </div>
+    // </section>
   );
 };
 
