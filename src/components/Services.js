@@ -10,20 +10,20 @@ import React from "react";
 // } from "../data/content/home/index";
 
 const Services = () => {
-  const navigate = useNavigate();
-  const quizCard = () => {
-    localStorage.setItem("quiz", 1);
-    navigate("/quiz");
-  };
-  const brainCard = () => {
-    localStorage.setItem("brain", 1);
-    navigate("/brain");
-  };
-  const liveCard = () => {
-    if (localStorage.getItem("live")) {
-      navigate("/live");
-    }
-  };
+  // const navigate = useNavigate();
+  // const quizCard = () => {
+  //   localStorage.setItem("quiz", 1);
+  //   navigate("/quiz");
+  // };
+  // const brainCard = () => {
+  //   localStorage.setItem("brain", 1);
+  //   navigate("/brain");
+  // };
+  // const liveCard = () => {
+  //   if (localStorage.getItem("live")) {
+  //     navigate("/live");
+  //   }
+  // };
   return (
     <></>
     // <section className={styles.serviceSection}>
