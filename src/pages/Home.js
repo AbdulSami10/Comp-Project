@@ -30,7 +30,7 @@ const Home = () => {
         </div>
         <img src="./img/mind pic.png" alt="mindPic" width="420px" />
       </div>
-      <Services />
+      {/* <Services /> */}
     </React.Fragment>
   );
 };
