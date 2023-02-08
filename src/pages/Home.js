@@ -4,7 +4,7 @@ import { heading } from "../data";
 import { homeText } from "../data/content/home/index";
 import styles from "../styles/home.module.css";
 import Button from "../UI/Button/Button";
-import Services from "../components/services";
+// import Services from "../components/services";
 import { message } from "antd";
 const Home = () => {
   const navigate = useNavigate();
