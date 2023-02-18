@@ -2,8 +2,13 @@ import React from "react";
 import H1 from "../../UI/H1/H1";
 
 const BrainTestResult = ({ rightPercentage, leftPercentage }) => {
+  const userinfo = JSON.parse(localStorage.getItem("userInfo"));
+  const name = userinfo.name;
   return (
     <React.Fragment>
+      {setTimeout(() => {
+        return <H1>{name}</H1>;
+      }, 5000)}
       <H1>{rightPercentage}</H1>
       <H1>{leftPercentage}</H1>
       <div

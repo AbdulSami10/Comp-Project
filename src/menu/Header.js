@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { CgMenu, CgClose } from "react-icons/cg";
 
 import styles from "../styles/header.module.css";
-// import NavBar from "../components/navBar";
+import NavBar from "../components/navBar";
 import { heading } from "../data/index";
 const Header = () => {
   const mobileNav = useRef();
@@ -29,9 +29,11 @@ const Header = () => {
         ) : (
           <CgClose onClick={menuClose} className={styles.menuClose} />
         )}
-        <span className={styles.desktopNav}>{/* <NavBar /> */}</span>
+        <span className={styles.desktopNav}>
+          <NavBar />
+        </span>
       </div>
-      {/* <span ref={mobileNav}>{menu && <NavBar />}</span> */}
+      <span ref={mobileNav}>{menu && <NavBar />}</span>
     </div>
   );
 };

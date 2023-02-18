@@ -26,19 +26,20 @@ const NavBar = () => {
         <ul className={styles.navbarLists}>
           <NavLink to={"/"} className={styles.navbarLink}>
             <li>
-              Home
               <HomeOutlined className={styles.icon} />
+              Home
             </li>
           </NavLink>
           <NavLink to={"/about"} className={styles.navbarLink}>
             <li>
-              About Us <InfoCircleOutlined className={styles.icon} />
+              <InfoCircleOutlined className={styles.icon} />
+              About Us
             </li>
           </NavLink>
           <NavLink to={"/registration"} className={styles.navbarLink}>
             <li>
-              Registration
               <FormOutlined className={styles.icon} />
+              Registration
             </li>
           </NavLink>
 

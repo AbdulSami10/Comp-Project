@@ -28,17 +28,19 @@ const LoginForm = () => {
           },
         }
       );
-      if (!respond.ok) {
-        throw new Error("Some thing Went Wrong Try Again");
+      if (respond.ok) {
+        const data = await respond.json;
+        console.log(data);
+        console.log("Success:", values);
+        localStorage.setItem("userInfo", JSON.stringify(values));
+        handleSubmit(values);
+        navigate("/");
       }
-      const data = await respond.json;
-      console.log(data);
-      console.log("Success:", values);
-      localStorage.setItem("userInfo", JSON.stringify(values));
-      handleSubmit(values);
-      navigate("/");
     } catch (error) {
-      console.log(error);
+      message.open({
+        type: "error",
+        content: "Error Please Tryagain",
+      });
     }
   };
   const onFinishFailed = (errorInfo) => {
