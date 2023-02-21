@@ -90,3 +90,54 @@
 
   cursor: pointer;
 }
+
+.resultSubheading {
+  text-align: center;
+  color: green;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  text-shadow: 0 0 50px black;
+  font-family: sans-serif;
+}
+.results {
+  margin: 20px 0;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.resultLeftBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 5px;
+}
+.resultLeftBarValue {
+  display: flex;
+  flex-direction: column;
+}
+.resultLeftBarValue > h3 {
+  margin: 0;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.resultRightBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 2.5px;
+}
+.resultRightBarValue {
+  display: flex;
+  flex-direction: column;
+}
+.resultRightBarValue > h3 {
+  margin: 0;
+  text-align: center;
+  font-family: sans-serif;
+}
