@@ -54,6 +54,9 @@ const QuizMcqs = (props) => {
     <React.Fragment>
       <div className={styles.quizMcMain}>
         <div className={styles.quizMcSec}>
+          <p className={styles.quizMcCur}>
+            {queNo + 1} Out Of {quiz.length}
+          </p>
           <Popconfirm
             title="Quit Game"
             description="are sure you want to quit this game?"
@@ -61,9 +64,6 @@ const QuizMcqs = (props) => {
           >
             <GiExitDoor className={styles.exitIcon} />
           </Popconfirm>
-          <p className={styles.quizMcCur}>
-            {queNo + 1} Out Of {quiz.length}
-          </p>
         </div>
         <h2 className={styles.quizMcTitle}>
           {queNo + 1}) &nbsp;{que.title}

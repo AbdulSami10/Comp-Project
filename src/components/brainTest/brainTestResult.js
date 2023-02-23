@@ -1,5 +1,5 @@
 import React from "react";
-import H1 from "../../UI/H1/H1";
+
 import { motion } from "framer-motion";
 import styles from "../../styles/brain.module.css";
 
@@ -17,7 +17,10 @@ const BrainTestResult = ({ rightPercentage, leftPercentage }) => {
         >{`Congratulations ${name} your...`}</h3>
         <div className={styles.results}>
           <div className={styles.resultLeftBar}>
-            <img src="./img/leftBrain.png" alt="leftbrainImage" width="200" />
+            <div className={styles.resultLeftBarTop}>
+              <h3>Left Brain</h3>
+              <img src="./img/leftBrain.png" alt="leftbrainImage" width="200" />
+            </div>
             <div className={styles.resultLeftBarValue}>
               <h3>{`${leftPercentage}%`}</h3>
               <motion.div
@@ -46,11 +49,14 @@ const BrainTestResult = ({ rightPercentage, leftPercentage }) => {
                 }}
               />
             </div>
-            <img
-              src="./img/right brain.png"
-              alt="rightbrainImage"
-              width="200"
-            />
+            <div className={styles.resultRightBarTop}>
+              <img
+                src="./img/right brain.png"
+                alt="rightbrainImage"
+                width="200"
+              />
+              <h3>Right Brain</h3>
+            </div>
           </div>
         </div>
       </div>
