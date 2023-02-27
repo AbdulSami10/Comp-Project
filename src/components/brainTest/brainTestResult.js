@@ -2,6 +2,9 @@ import React from "react";
 
 import { motion } from "framer-motion";
 import styles from "../../styles/brain.module.css";
+import DoctorCard from "../doctorCard";
+import { doctorData } from "../../data/content/doctors";
+import H1 from "../../UI/H1/H1";
 
 const BrainTestResult = ({ rightPercentage, leftPercentage }) => {
   let leftBarValue = leftPercentage * 2;
@@ -18,7 +21,13 @@ const BrainTestResult = ({ rightPercentage, leftPercentage }) => {
         <div className={styles.results}>
           <div className={styles.resultLeftBar}>
             <div className={styles.resultLeftBarTop}>
-              <h3>Left Brain</h3>
+              <motion.h3
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ type: "spring", delay: 0.3 }}
+              >
+                Left Brain
+              </motion.h3>
               <img src="./img/leftBrain.png" alt="leftbrainImage" width="200" />
             </div>
             <div className={styles.resultLeftBarValue}>
@@ -55,9 +64,40 @@ const BrainTestResult = ({ rightPercentage, leftPercentage }) => {
                 alt="rightbrainImage"
                 width="200"
               />
-              <h3>Right Brain</h3>
+              <motion.h3
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ type: "spring", delay: 0.3 }}
+              >
+                Right Brain
+              </motion.h3>
             </div>
           </div>
+        </div>
+        <H1>Suggested Doctors For you</H1>
+        <div className={styles.doctorMain}>
+          {rightPercentage < 50 || leftPercentage < 50
+            ? doctorData.map((data) => {
+                return (
+                  <>
+                    <motion.div
+                      className={styles.card}
+                      animate={{ scale: 1, opacity: 100 }}
+                      transition={{ type: "linear", delay: 1 }}
+                      initial={{ scale: 0, opacity: 0 }}
+                    >
+                      <DoctorCard
+                        title={data.title}
+                        description={data.description}
+                        alt={data.alt}
+                        imgSrc={data.imgSrc}
+                        className={styles.cardInner}
+                      />
+                    </motion.div>
+                  </>
+                );
+              })
+            : ""}
         </div>
       </div>
     </React.Fragment>
