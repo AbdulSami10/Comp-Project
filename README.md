@@ -1,3 +1,18 @@
-![Capture2](https://user-images.githubusercontent.com/111075041/210759074-9d8b3d05-b99c-49e7-9edf-0eed7c27c92e.PNG)
+# Dr.Brain Web App
 
-![Capture](https://user-images.githubusercontent.com/111075041/210758883-f063da38-40a6-45d0-b32d-0663762e88ca.PNG)
+[View Online](https://drbrainpro.000webhostapp.com/)
+
+![stable](http://badges.github.io/stability-badges/dist/stable.svg)
+
+DR.Brain is a web app built with ReactJS and ant design frameworks components.
+
+## Dependencies
+* Node 14
+
+## Get Started
+```
+run npm install or yarn install
+run npm start or yarn start
+```
+Open your browser and go to http://localhost:3000
+
