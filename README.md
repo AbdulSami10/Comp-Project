@@ -35,5 +35,4 @@ This website consist of multiple pages and sections.
 
 
 You can also clone my repository and after cloning it you have to run these command in your powershell command promopt: ``yarn install`` ``yarn start`` and if you want to see Dr Brain publically, you can visit: https://http://drbrainpro.000webhostapp.com<br/>
-*Don't forgot to give feedback on my mail sami.sayani10@gmail.com.<br/>
-**All the rights for Dr Brain are reserved for Abdul Sami Sayani Memon**
+
