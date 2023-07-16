@@ -24,7 +24,9 @@ This website consist of multiple pages and sections.
   <br/>
 
 
-
+**The User can also be logged in with dummy email and password**<br/>
+email: drbrainuser@test.com<br/>
+password: drbrainusertest<br/>
 
 You can also clone my repository and after cloning it you have to run these command in your powershell command promopt: ``yarn install`` ``yarn start`` and if you want to see Dr Brain publically, you can visit: https://drbrain.netlify.app/<br/>
 
