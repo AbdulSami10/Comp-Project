@@ -1,7 +1,7 @@
 import React from "react";
-import { Form, Input, InputNumber, Select, message } from "antd";
-import styles from "../styles/login.module.css";
 import Button from "../UI/Button/Button";
+import styles from "../styles/login.module.css";
+import { Form, Input, InputNumber, Select, message } from "antd";
 import {
   LockOutlined,
   UserOutlined,

@@ -1,14 +1,14 @@
+import H1 from "../UI/H1/H1";
 import { message } from "antd";
+import { Rules } from "../components";
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Rules from "../components/rules";
+import styles from "../styles/about.module.css";
 import {
   aboutDescription,
   aboutHeading,
   aboutLongDescription,
 } from "../data/content/about-rule/index";
-import styles from "../styles/about.module.css";
-import H1 from "../UI/H1/H1";
 
 const About = () => {
   const navigate = useNavigate();

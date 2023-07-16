@@ -1,19 +1,24 @@
 import { message } from "antd";
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-const Live = () => {
+import { RegForm, RegisterSuccess } from "../components";
+
+const Registration = () => {
   const navigate = useNavigate();
   useEffect(() => {
     if (!localStorage.getItem("userInfo")) {
       message.open({ type: "error", content: "You are not authorized" });
 
       navigate("/login");
-    } else if (!localStorage.getItem("live")) {
-      navigate("/");
     }
+    // localStorage.getItem("live") ? navigate("/live") : navigate("/");
   }, [navigate]);
 
-  return <div>Under Working..........</div>;
+  return (
+    <React.Fragment>
+      {localStorage.getItem("live") ? <RegisterSuccess /> : <RegForm />}
+    </React.Fragment>
+  );
 };
 
-export default Live;
+export default Registration;

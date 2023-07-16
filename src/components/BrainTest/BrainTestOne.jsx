@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { brainChapterOneHeading } from "../../data/content/brainTest";
 import H1 from "../../UI/H1/H1";
-import styles from "../../styles/brain.module.css";
-import { brainTestOneMcqs } from "../../data/content/brainTest/brainTestMcqs";
+import React, { useState } from "react";
 import Button from "../../UI/Button/Button";
+import styles from "../../styles/brain.module.css";
+import { brainChapterOneHeading } from "../../data/content/brainTest";
+import { brainTestOneMcqs } from "../../data/content/brainTest/brainTestMcqs";
 
 const BrainTestOne = ({
   setBrainTestOne,

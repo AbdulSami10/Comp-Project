@@ -1,12 +1,11 @@
-import { message } from "antd";
-import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import QuizMcqs from "../components/quiz/quizMcqs";
-import QuizResult from "../components/quiz/quizResult";
-import QuizStart from "../components/quiz/quizStart";
-import { quiz } from "../data/content/quiz/quizContent";
-import styles from "../styles/quiz.module.css";
 import H1 from "../UI/H1/H1";
+import { message } from "antd";
+import { useNavigate } from "react-router-dom";
+import styles from "../styles/quiz.module.css";
+import React, { useEffect, useState } from "react";
+import { quiz } from "../data/content/quiz/quizContent";
+import { QuizMcqs, QuizResult, QuizStart } from "../components/Quiz";
+
 const Quiz = () => {
   const navigate = useNavigate();
 

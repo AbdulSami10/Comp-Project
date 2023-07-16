@@ -1,15 +1,15 @@
-import { DatePicker, Form, Input, message, Select } from "antd";
-import Button from "../UI/Button/Button";
 import React from "react";
-import styles from "../styles/regForm.module.css";
 import H1 from "../UI/H1/H1";
+import Button from "../UI/Button/Button";
+import { useNavigate } from "react-router-dom";
+import styles from "../styles/regForm.module.css";
+import { DatePicker, Form, Input, message, Select } from "antd";
 import {
   curCourses,
   hearAboutUs,
   interestedStudy,
   regFormHeading,
 } from "../data/content/login/index.js";
-import { useNavigate } from "react-router-dom";
 
 const RegForm = () => {
   const navigate = useNavigate();

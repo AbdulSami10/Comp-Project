@@ -12,14 +12,18 @@
 .navbarLink {
   display: inline-block;
   text-decoration: none;
-  /* color: white; */
-  text-shadow: 0.25px 0.25px 0.5px black;
+  /* text-shadow: 0.25px 0.25px 0.5px black; */
   color: #7656d6;
   font-size: 1rem;
-  /* font-weight: 500; */
-  /* text-transform: uppercase; */
-
-  transition: color 0.3s linear;
+  font-weight: 500;
+  transition: color 0.5s linear;
+}
+.active {
+  transform: scale(1.1);
+  color: black;
+}
+.navbarLink:hover {
+  transform: scale(1.1);
 }
 .navbarLists {
   display: flex;

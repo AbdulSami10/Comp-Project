@@ -1,7 +1,7 @@
-import { Result } from "antd";
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Result } from "antd";
 import Button from "../UI/Button/Button";
+import { useNavigate } from "react-router-dom";
 
 const Error = () => {
   const navigate = useNavigate();

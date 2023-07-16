@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/footer.module.css";
 import { CopyrightCircleOutlined } from "@ant-design/icons";
+
 const Footer = () => {
   return (
     <footer className={styles.footer}>

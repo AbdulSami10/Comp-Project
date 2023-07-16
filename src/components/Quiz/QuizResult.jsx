@@ -1,13 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import Button from "../../UI/Button/Button";
+import styles from "../../styles/quiz.module.css";
+import { quiz } from "../../data/content/quiz/quizContent";
 import {
   quizResBest,
   quizResNorml,
   quizResWorst,
 } from "../../data/content/quiz/index";
-import { quiz } from "../../data/content/quiz/quizContent";
-import styles from "../../styles/quiz.module.css";
-import Button from "../../UI/Button/Button";
 
 const QuizResult = (props) => {
   const setResult = props.setResult;

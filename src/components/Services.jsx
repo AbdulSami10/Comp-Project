@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "antd";
-import { useNavigate } from "react-router-dom";
 import H1 from "../UI/H1/H1";
+import { useNavigate } from "react-router-dom";
 import styles from "../styles/services.module.css";
 import {
   cardOneHeading,

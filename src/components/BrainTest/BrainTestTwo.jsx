@@ -1,6 +1,6 @@
+import H1 from "../../UI/H1/H1";
 import React, { useState } from "react";
 import styles from "../../styles/brain.module.css";
-import H1 from "../../UI/H1/H1";
 import { brainTestMcqsTwo } from "../../data/content/brainTest/brainTestMcqsTwo";
 import {
   brainChapterTwoHeading,

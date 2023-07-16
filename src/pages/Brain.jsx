@@ -1,14 +1,15 @@
 import { message } from "antd";
-import React, { useEffect, useState } from "react";
 import H1 from "../UI/H1/H1";
 import { useNavigate } from "react-router-dom";
-import { brainTestHead } from "../data/content/brainTest/index";
-import BrainTestStart from "../components/brainTest/brainTestStart";
-import BrainTestTwo from "../components/brainTest/brainTestTwo";
-import BrainTestOne from "../components/brainTest/brainTestOne";
 import styles from "../styles/brain.module.css";
-import BrainTestResult from "../components/brainTest/brainTestResult";
-
+import React, { useEffect, useState } from "react";
+import { brainTestHead } from "../data/content/brainTest/index";
+import {
+  BrainTestOne,
+  BrainTestTwo,
+  BrainTestStart,
+  BrainTestResult,
+} from "../components/BrainTest";
 const Brain = () => {
   const navigate = useNavigate();
   useEffect(() => {

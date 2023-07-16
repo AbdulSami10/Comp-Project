@@ -1,10 +1,9 @@
 import React from "react";
-
+import { DoctorCard } from "../";
+import H1 from "../../UI/H1/H1";
 import { motion } from "framer-motion";
 import styles from "../../styles/brain.module.css";
-import DoctorCard from "../doctorCard";
 import { doctorData } from "../../data/content/doctors";
-import H1 from "../../UI/H1/H1";
 
 const BrainTestResult = ({ rightPercentage, leftPercentage }) => {
   let leftBarValue = leftPercentage * 2;

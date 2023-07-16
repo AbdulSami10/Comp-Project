@@ -1,9 +1,9 @@
-import { message, Popconfirm, Result } from "antd";
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import Button from "../UI/Button/Button";
+import { useNavigate } from "react-router-dom";
+import { message, Popconfirm, Result } from "antd";
 
-const RegisterSucces = () => {
+const RegisterSuccess = () => {
   const navigate = useNavigate();
   const logoutHandler = () => {
     localStorage.removeItem("live");
@@ -32,4 +32,4 @@ const RegisterSucces = () => {
   );
 };
 
-export default RegisterSucces;
+export default RegisterSuccess;

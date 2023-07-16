@@ -1,4 +1,6 @@
 import React from "react";
+import H1 from "../UI/H1/H1";
+import styles from "../styles/rules.module.css";
 import {
   ruleFive,
   ruleFour,
@@ -10,8 +12,7 @@ import {
   ruleThree,
   ruleTwo,
 } from "../data/content/about-rule/index";
-import styles from "../styles/rules.module.css";
-import H1 from "../UI/H1/H1";
+
 const Rules = () => {
   return (
     <React.Fragment>
